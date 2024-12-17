@@ -1,0 +1,24 @@
+@layer utilities {
+  /* Scrollbar styles */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.600') theme('colors.gray.800');
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: theme('colors.gray.800');
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: theme('colors.gray.600');
+    border-radius: 4px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.gray.500');
+  }
+}

@@ -1,0 +1,30 @@
+@layer components {
+  .message-content {
+    @apply prose prose-invert max-w-none;
+  }
+
+  .message-content h3 {
+    @apply text-lg font-semibold text-orange-500 mb-3;
+  }
+
+  .message-content p {
+    @apply mb-4 text-gray-200 leading-[1.8];
+  }
+
+  .message-content strong {
+    @apply text-white font-bold;
+  }
+
+  .message-content ul,
+  .message-content ol {
+    @apply pl-4 mb-4 space-y-2;
+  }
+
+  .message-content li {
+    @apply text-gray-200 leading-[1.8];
+  }
+
+  .message-content hr {
+    @apply my-4 border-gray-700;
+  }
+}

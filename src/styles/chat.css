@@ -1,0 +1,22 @@
+@layer components {
+  .chat-container {
+    @apply flex-1 overflow-y-auto scrollbar-custom;
+    height: calc(100vh - 14rem); /* Account for header and input */
+  }
+
+  .chat-messages {
+    @apply px-4 py-6 space-y-6 min-h-full;
+  }
+
+  .chat-message-wrapper {
+    @apply max-w-3xl mx-auto;
+  }
+
+  .chat-input-container {
+    @apply sticky bottom-0 bg-[#141414] border-t border-[#2a2a2a] p-4 mt-auto;
+  }
+
+  .chat-input-wrapper {
+    @apply max-w-3xl mx-auto;
+  }
+}
